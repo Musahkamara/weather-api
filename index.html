@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+    <title>Weather app</title>
+</head>
+<body>
+   <div class="container my-5 max-auto">
+    <h1 class="text-muted text-center my-4 "> My Weather app</h1>
+
+    <form class="change-location my-4 text-center text-muted">
+        <label for="city">Enter a location for weather information</label>
+        <input type="text" name="city" class="form-control p-4">
+                <!-- <button>search</button> -->
+    </form>
+    <div class="card shadow-lg rounded ">
+        <img src="https://via.placeholder.com/150" alt="weather" class="time card-img-top">
+        <p>Access to fetch at 'http://dataservice.accuweather.com/locations/v1/cities/search?apikey=U5JE4WRiAPzaUNlbTVYZAdvYRupmy9mL&q=london' from origin 'http://127.0.0.1:5500' has been blocked by CORS policy: </p>
+        <div class="text-muted text-uppercase text-center details">
+            <h5 class="my-3">City name</h5>
+            <div class="my-3">Weather condition</div>
+            <div class="display-4 my-4">
+                <span>temp</span>
+                <span>&deg;C</span>
+            </div>
+        </div>
+    </div>
+   </div> 
+</body>
+<script src="forecat.js"></script>
+<script src="app.js"></script>
+
+</html>
